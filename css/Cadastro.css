@@ -1,0 +1,128 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #0d0d0d;
+    color: white;
+    height: 1000px;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /*O meio (1fr) cresce para preencher o espaço*/
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    text-align: center;
+    /* border: 1px solid white; */
+}
+
+.left h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.left h2 span {
+    color: #ffc107;
+}
+
+.left p {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+#container-inputs
+{
+    /* border: 1px solid white; */
+    display: flex;         /* Coloca as colunas lado a lado */
+    gap: 45px;            /* Espaço entre a coluna da esquerda e da direita */
+    width: 500px;     /* Opcional: define uma largura máxima */
+}
+.login-box 
+{
+    background: #111;
+    padding: 40px;
+    border-radius: 10px;
+    width: 540px;
+    box-shadow: 30px 30px 20px rgb(0, 0, 0);
+    /* border: 1px solid white; */
+}
+
+.login-box h2 span 
+{
+    color: #ffc107;
+}
+
+.login-box p 
+{
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.input-group 
+{
+    margin-bottom: 15px;
+    height: 290px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group input 
+{
+    width: 110%;
+    height: 40px;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #000;
+    color: white;
+}
+
+.input-group input:focus 
+{
+    border-color: #ffc107;
+    outline: none;
+}
+
+.btn 
+{
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+    background: #ffc107;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover 
+{
+    background: #e0a800;
+}

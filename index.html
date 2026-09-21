@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>RafaTech Assistência</title>
+</head>
+<body>
+    <!-- CABECALHO SITE -->
+    <header id="cabecalho">
+        <a href=""><img id="logosite" src="./img/logosite1.png" alt="logo da assistencia"></a>
+        <div class="user-menu-container">
+            <span id="nome-usuario-logado" class="user-name"></span>
+            <button id="btn-abrir" class="btn-menu">☰</button>
+        </div>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <button id="btn-fechar" class="btn-fechar">&times;</button>
+        <nav class="menu-sidebar">
+            <a href="./meu_perfil/meuperfil.html">Seus dados</a>
+            <a href="./login/Login.html">Login</a>
+            <a href="./cadastro/cadastro.html">Cadastre-se</a>
+            <a href="./abrirchamado/abrirchamado.html">Abrir chamado</a>
+            <a href="./serviços/serviços.html">Serviços</a>
+            <a href="./sobre_nos/sobrenos.html">Sobre nós</a>
+        </nav>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+
+    <!-- MAIN SITE -->
+    <div class="container">
+        <div id="left">
+           <img id="imgpcfoda" src="./img/Computador-semfundo.png" alt="Pc pika para caralho amarelo e preto">
+        </div>
+
+        <div id="right">
+            <div id="boasvindas">
+                <h2>Alta Performance e Precisão para sua Tecnologia.</h2>
+                <p>
+                    Na RafaTech Assistência, transformamos problemas técnicos em soluções de alto nível.<br>
+                    Especialistas em hardware, software e reparos avançados.
+                    <br>
+                    <br>
+                    Fazemos manutenções em computadores e notebooks, seja qual for o seu problema,<br> 
+                    a RafaTech Assitência irá resolver seus problemas.
+                    <br>
+                    <br>
+                    Estamos localizados na Rua Campo Formoso, 738 - Campo Grande - Rio de Janeiro, RJ
+                </p>
+
+                <div id="div-btns-boasvindas">
+                <button id="contato" class="btns">
+                    <img class="iconbtn" src="./img/Icones/Icone-whatsapp.png" alt="logowhatsapp">
+                    <a class="linkbtn" href="javascript:void(0);" data-url="https://wa.me/5521987072882?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20minha%20máquina!">Contato</a>
+                </button>
+                
+                <button id="servicos" class="btns">
+                    <img class="iconbtn" src="./img/Icones/Icone-servico.png" alt="logoservico">
+                    <a class="linkbtn" href="javascript:void(0);" data-url="./serviços/serviços.html">Serviços</a>
+                </button>
+                
+                <button id="chamado" class="btns">
+                    <img class="iconbtn" src="./img/Icones/Icone-chamado.png" alt="logochamado">
+                    <a class="linkbtn" href="javascript:void(0);" data-url="./abrirchamado/abrirchamado.html">Abrir chamado</a>
+                </button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FOOTER (RODAPÉ) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>RafaTech <span>Assistência</span></h2>
+                <p>Especialistas em Hardware e Soluções Digitais.</p>
+            </div>
+            <div class="footer-services">
+                <ul>
+                    <li>Manutenção de Laptops e Desktops</li>
+                    <li>Limpeza Técnica</li>
+                    <li>Montagem de Computadores</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2026 RafaTech Assistência. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="./javascript/navbar.js"></script>
+    <script src="./javascript/main.js"></script>
+</body>
+</html>

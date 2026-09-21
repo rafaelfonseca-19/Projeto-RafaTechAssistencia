@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/Login.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Login - RafaTech</title>
+</head>
+<body>
+    <!-- CABECALHO SITE -->
+    <header id="cabecalho">
+        <a href="../index.html"><img id="logosite" src="../img/logosite1.png" alt="logo da assistencia"></a>
+        <div class="user-menu-container">
+            <span id="nome-usuario-logado" class="user-name"></span>
+            <button id="btn-abrir" class="btn-menu">☰</button>
+        </div>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <button id="btn-fechar" class="btn-fechar">&times;</button>
+        <nav class="menu-sidebar">
+            <a href="../meu_perfil/meuperfil.html">Seus dados</a>
+            <a href="../login/Login.html">Login</a>
+            <a href="../cadastro/cadastro.html">Cadastre-se</a>
+            <a href="../abrirchamado/abrirchamado.html">Abrir chamado</a>
+            <a href="../serviços/serviços.html">Serviços</a>
+            <a href="../sobre_nos/sobrenos.html">Sobre nós</a>
+        </nav>
+    </aside>
+
+    <div id="overlay" class="overlay"></div>
+    <div class="container">
+        <div class="left">
+            <h2>ASSISTÊNCIA QUE <span>CONECTA SOLUÇÕES</span></h2>
+            <p>Assistência técnica especializada em consertos de computadores.</p>
+        </div>
+
+        <div class="right">
+            <form id="formlogin" method="post">
+                <div class="login-box">
+                    <h2><span>Login</h2>
+                    <p>Faça login para continuar</p>
+
+                    <div class="input-group">
+                        <input id="usuario" type="text" placeholder="Usuário" required>
+                        <!-- <span id="cpf-erro" style="color: #ff4d4d; font-size: 12px; display: none;">CPF inválido</span> -->
+                        <input id="senha" type="password" placeholder="Senha" minlenght="8" maxlength="15" required>
+                    </div>
+
+                    <div class="forgot">
+                        <a href="../cadastro/cadastro.html">Não possui cadastro?</a>
+                    </div>
+
+                    <a href=""><button type="submit" class="btn">ENTRAR</button></a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER (RODAPÉ) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>RafaTech <span>Assistência</span></h2>
+                <p>Especialistas em Hardware e Soluções Digitais.</p>
+            </div>
+            
+            <div class="footer-services">
+                <ul>
+                    <li>Manutenção de Laptops e Desktops</li> <!-- Atualizado -->
+                    <li>Limpeza Técnica</li>
+                    <li>Montagem de Computadores</li> <!-- Atualizado -->
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-copyright">
+            <p>&copy; 2026 RafaTech Assistência. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="../javascript/navbar.js"></script>
+    <script src="../javascript/validacpf.js"></script>
+    <script src="../javascript/login.js"></script>
+</body>
+</html>

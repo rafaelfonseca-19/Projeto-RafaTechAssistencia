@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #0d0d0d;
+    color: white;
+    height: 1000px;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Cabeçalho, conteúdo flexível e rodapé */
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    text-align: center;
+}
+
+.left h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.left h2 span {
+    color: #ffc107;
+}
+
+.left p {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meuperfil-box 
+{
+    background: #111;
+    padding: 40px;
+    border-radius: 10px;
+    width: 600px;
+    height: 630px;
+    box-shadow: 30px 30px 20px rgb(0, 0, 0);
+    
+}
+
+.meuperfil-box h2 span 
+{
+    color: #ffc107;
+}
+
+.meuperfil-box p 
+{
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.perfil-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.btn-sair-box {
+    background-color: transparent;
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+    padding: 6px 14px;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-sair-box:hover {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+#container-inputs {
+    display: flex;         /* Coloca as colunas lado a lado */
+    gap: 45px;            /* Espaço entre a coluna da esquerda e da direita */
+    width: 500px; 
+    
+}
+
+.input-group {
+    margin-bottom: 15px;
+    height: auto;         /* Alterado para auto para acomodar as labels sem esmagar os campos */
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    
+}
+
+.lblform
+{
+    font-size: 10pt;
+    font-weight: 800;
+    margin-left: 3px;
+}
+
+
+.input-group input {
+    width: 110%;
+    height: 40px;
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #000;
+    color: white;
+    transition: 0.2s;
+    
+}
+
+.input-group input:focus {
+    border-color: #ffc107;
+    outline: none;
+}
+
+/* Customização para campos estáticos/bloqueados (CPF, Rua, Cidade, etc.) */
+.input-group input[readonly] {
+    background: #1a1a1a;
+    color: #777;
+    border-color: #252525;
+    cursor: not-allowed;
+}
+
+/* Container para organizar os botões de Salvar e Excluir lado a lado */
+.profile-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    width: 110%; /* Alinhado com a largura expandida dos inputs */
+}
+
+#container-btns
+{
+    display: flex; 
+    gap: 15px; 
+    margin-top: 20px; 
+    margin-left: 2px;
+    width: 100%;
+}
+.btn {
+    flex: 1;
+    padding: 12px;
+    background: #ffc107;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #e0a800;
+}
+
+/* Variação destrutiva para o botão de exclusão de conta */
+.btn-delete {
+    background: #ff4d4d;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #cc3333;
+}

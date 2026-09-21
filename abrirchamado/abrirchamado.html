@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/abrirchamado.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>RafaTech Assistência - Abertura de Chamado</title>
+</head>
+<body>
+    <!-- CABECALHO SITE -->
+    <header id="cabecalho">
+        <a href="../index.html"><img id="logosite" src="../img/logosite1.png" alt="logo da assistencia"></a>
+        <div class="user-menu-container">
+            <span id="nome-usuario-logado" class="user-name"></span>
+            <button id="btn-abrir" class="btn-menu">☰</button>
+        </div>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <button id="btn-fechar" class="btn-fechar">&times;</button>
+        <nav class="menu-sidebar">
+            <a href="../meu_perfil/meuperfil.html">Seus dados</a>
+            <a href="../login/Login.html">Login</a>
+            <a href="../cadastro/cadastro.html">Cadastre-se</a>
+            <a href="../abrirchamado/abrirchamado.html">Abrir chamado</a>
+            <a href="../serviços/serviços.html">Serviços</a>
+            <a href="../sobre_nos/sobrenos.html">Sobre nós</a>
+        </nav>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+
+    <div class="main-container">
+        <div class="left">
+            <h2>ASSISTÊNCIA QUE <span>CONECTA SOLUÇÕES</span></h2>
+            <p>Assistência técnica especializada em consertos de computadores.</p>
+        </div>
+
+        <div class="right-side">
+            <div class="form-card">
+                <h2>Abra seu chamado!</h2>
+                <p>Preencha os dados para solicitar seu serviço</p>
+                
+                <form id="formChamado">
+                    <div class="input-group">
+                        <input type="text" id="nomeCliente" placeholder="Nome do Cliente" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="date" id="dataServico" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="descServico" placeholder="Descreva o serviço (Ex: Solicito manutenção no meu desktop, está esquentando muito...)" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Enviar para o WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER (RODAPÉ) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>RafaTech <span>Assistência</span></h2>
+                <p>Especialistas em Hardware e Soluções Digitais.</p>
+            </div>
+            
+            <div class="footer-services">
+                <ul>
+                    <li>Manutenção de Laptops e Desktops</li> <!-- Atualizado -->
+                    <li>Limpeza Técnica</li>
+                    <li>Montagem de Computadores</li> <!-- Atualizado -->
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-copyright">
+            <p>&copy; 2026 RafaTech Assistência. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="../javascript/abrirchamado.js"></script>
+    <script src="../javascript/navbar.js"></script>
+</body>
+</html>

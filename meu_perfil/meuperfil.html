@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css"> 
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/meuperfil.css">
+    <title>Meu Perfil - RafaTech</title>
+</head>
+<body>
+    <header id="cabecalho">
+        <a href="../index.html"><img id="logosite" src="../img/logosite1.png" alt="logo da assistencia"></a>
+        <div class="user-menu-container">
+            <span id="nome-usuario-logado" class="user-name"></span>
+            <button id="btn-abrir" class="btn-menu">☰</button>
+        </div>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <button id="btn-fechar" class="btn-fechar">&times;</button>
+        <nav class="menu-sidebar">
+            <a href="../meu_perfil/meuperfil.html">Seus dados</a>
+            <a href="../login/Login.html">Login</a>
+            <a href="../cadastro/cadastro.html">Cadastre-se</a>
+            <a href="../abrirchamado/abrirchamado.html">Abrir chamado</a>
+            <a href="../serviços/serviços.html">Serviços</a>
+            <a href="../sobre_nos/sobrenos.html">Sobre nós</a>
+        </nav>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+
+    <div class="container">
+        <div class="left">
+            <h2>GERENCIE SEUS <span>DADOS RESTRITOS</span></h2>
+            <p>Mantenha suas informações de contato e endereço sempre atualizadas para agilizar seus chamados.</p>
+        </div>
+
+        <div class="right">
+            <form id="formperfil">
+                <div class="meuperfil-box">
+                    
+                    <div class="perfil-header">
+                        <h2>Meu <span>Perfil</span></h2>
+                        <button type="button" id="btn-sair-perfil" class="btn-sair-box">Sair da Conta</button>
+                    </div>
+                    
+                    <p>Visualize ou altere suas informações abaixo</p>
+                    
+                    <div id="container-inputs">
+                        <div class="input-group">
+                            <label class="lblform">CPF</label>
+                            <input id="cpf" type="text" readonly style="background-color: #333; cursor: not-allowed;">
+                            <label class="lblform">Usuário</label>
+                            <input id="usuario" type="text" required>
+                            <label class="lblform">Email</label>
+                            <input id="email" type="email" required>
+                            <label class="lblform">Senha</label>
+                            <input id="senha" type="password"  required maxlength="15">
+                            <label class="lblform">Confirmar senha</label>
+                            <input id="confirmesenha" type="password" required maxlength="15">
+                            <label class="lblform">CEP</label>
+                            <input id="cep" type="text" required maxlength="9">
+                        </div>
+
+                        <div class="input-group">
+                            <label class="lblform">Rua</label>
+                            <input id="rua" type="text" readonly style="background-color: #333;">
+                            <label class="lblform">Bairro</label>
+                            <input id="bairro" type="text" readonly style="background-color: #333;">
+                            <label class="lblform">Cidade</label>
+                            <input id="cidade" type="text" readonly style="background-color: #333;">
+                            <label class="lblform">Estado</label>
+                            <input id="estado" type="text" readonly style="background-color: #333;">
+                            <label class="lblform">Número</label>
+                            <input id="numero" type="text" required>
+                            <label class="lblform">Complemento</label>
+                            <input id="complemento" type="text" required>
+                        </div>
+                    </div>
+                    
+                    <div id="container-btns">
+                        <button type="submit" class="btn" style="background-color: #ffb703; color: #000;">Salvar Alterações</button>
+                        <button type="button" id="btn-excluir" class="btn" style="background-color: #ff4d4d; color: #fff;">Excluir Conta</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>RafaTech <span>Assistência</span></h2>
+                <p>Especialistas em Hardware e Soluções Digitais.</p>
+            </div>
+            
+            <div class="footer-services">
+                <ul>
+                    <li>Manutenção de Laptops e Desktops</li>
+                    <li>Limpeza Técnica</li>
+                    <li>Montagem de Computadores</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-copyright">
+            <p>&copy; 2026 RafaTech Assistência. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../javascript/navbar.js"></script>
+    <script src="../javascript/main.js"></script> <script src="../javascript/viacepAPI.js"></script> 
+    <script src="../javascript/formatarcelular.js"></script>
+    <script src="../javascript/meuperfil.js"></script>
+</body>
+</html>

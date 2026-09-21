@@ -1,0 +1,76 @@
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 50px 0 0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top: 4px solid #ffc107;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row; /* Coloca um ao lado do outro */
+    justify-content: flex-start; /* Gruda os dois no início (esquerda) */
+    align-items: flex-start; /* Alinha pelo topo */
+    padding: 0 40px 40px 40px;
+    gap: 80px; /* Esse é o espaço entre o nome da assistência e a lista de serviços */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-brand h2 {
+    color: #ffc107;
+    margin: 0;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.footer-brand span {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.footer-brand p {
+    margin: 5px 0 0 0;
+    color: #cccccc;
+}
+
+.footer-services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-services li {
+    color: #ffc107;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left; /* Garante alinhamento à esquerda */
+}
+
+.footer-copyright {
+    background-color: #ffc107;
+    padding: 15px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-copyright p {
+    margin: 0;
+    color: #000000;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: left;
+}
+
+/* No celular, eles se empilham para não quebrar o layout */
+@media (max-width: 700px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
