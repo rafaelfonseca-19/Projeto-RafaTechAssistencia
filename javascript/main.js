@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Vincula os cliques passando o elemento do botão
-    if (btncontato) {
-        btncontato.addEventListener('click', (e) => verificarAcessoBotao(e, btncontato));
-    }
+    // // Vincula os cliques passando o elemento do botão
+    // if (btncontato) {
+    //     btncontato.addEventListener('click', (e) => verificarAcessoBotao(e, btncontato));
+    // }
 
     // O botão de serviços ainda usa a função para conseguir ler o 'data-url' e redirecionar, 
     // mas agora ele pula o bloqueio do login.
